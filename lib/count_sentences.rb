@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    arr = self.strip.split(/(\.|\?|\!)/)
-    binding.pry
+    self.strip.split(/(\.|\?|\!)/).grep(/\w{2,}/)
+    #binding.pry
   end
 end
